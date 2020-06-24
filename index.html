@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-windth, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Michelle Hernández</title>
+	
+	<link rel="icon" type="image/png" href="Imagenes/favicon_michelle.png"/><!--el icono que aparece en la pestaña de la ventana-->
+	<link href="https://fonts.googleapis.com/css?family=Anton|DM+Serif+Display:400i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="Css/estilos.css">
+</head>
+<body>
+
+
+<div class="flexbox">
+	<div class="box"></div>
+
+</div>
+
+
+	<header class="header">
+		<div class="container">
+			<figure class="logo"><!--contenedor de la imagen-->
+<!-- en "img" se coloca el atributo "alt" = a su valor, para que la imagen tenga un texto alternaivo y "src" es la ruta donde
+se encuentra la imagen, sea en la fuente o en el mismo equipo-->
+				<img src="Imagenes/logo_michelle.png" height="50px" alt="logo de http://michellehernandez.com">
+			</figure>
+			<nav class="menu"><!--la etiqueta "nav" se usa para menu de navegacion-->
+			<ol>
+				<li>
+<!--ejemplo-->
+					<!--<a class="link" href="./prueba/portafolio.html">Portafolio</a><!--la etiqueta "a" se usa para enlaces o ancla, puede ser interna o externa y el atributo "href"
+					nos coloca el texto en color y subrayado para indicar que nos redirecciona a otro lado sea interior o exterior de la pag-->	
+					<a class="link" href="#portafolio">Portafolio</a> <!--me manda a esa seccion-->
+				</li>
+				<li>
+					<a class="link" href="#experiencia">Experiencia</a>
+				</li>
+				<li>
+					<a class="link" href="#contacto">Trabajemos juntos</a>
+				</li>
+			</ol>
+			</nav>
+		</div>
+	</header>
+	<section class="hero"> <!--se coloca "hero" que sinifica heroe como para saber que es nuestra parte principal-->
+		<div class="container">
+		<h1>Hola! Soy <strong>Michelle Hernández</strong><br/>Desarrollador<strong> JavaScript</strong> con<br/>pasión por los <strong>retos</strong>
+		y el <strong>aprendizaje</strong></h1>
+		<img class="hero-image" src="Imagenes/hero.jpg" width="500" height="300" alt="imagen principal"> <!--imagen de portada-->
+	</section>
+	
+	<section id="portafolio" class="portfolio">
+		<div class="container">
+			<h2>Portafolio (Proyectos Destacados)</h2>
+			<article class="project">
+				<div class="project-details">
+					<h3 class="project-title">Platzi Video</h3>
+					<h6 class="project-course">React Native / React</h6>
+					<p class="project-date"><small><strong>Fecha:</strong> 03/03/2020</small></p>
+					<p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+					<p class="project-description">aqui colocamos todo el texto que nos indica la explicacion o el resumen de los aspectos mas importantes
+					que contiene el video que se encuentra en el enlace que se adjunto en la parte anterior de este texto...bla bla bla..
+					lo ideal es explicar de que se trata el proyecto que tenemos en esta parte de seccion...</p>
+				</div>
+				<figure class="project-imageContainer">
+					<img class="project-image" src="Imagenes/platzi-video-react-native.png" alt="Proyecto del curso de React Native" width="500">
+				</figure>
+			</article>
+		
+			<article class="project">
+				<div class="project-details">
+					<h3 class="project-title">Platzi Video</h3>
+					<h6 class="project-course">React Native / React</h6>
+					<p class="project-date"><small><strong>Fecha:</strong> 03/03/2020</small></p>
+					<p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+					<p class="project-description">aqui colocamos todo el texto que nos indica la explicacion o el resumen de los aspectos mas importantes
+				que contiene el video que se encuentra en el enlace que se adjunto en la parte anterior de este texto...bla bla bla..
+				lo ideal es explicar de que se trata el proyecto que tenemos en esta parte de seccion...</p>
+				</div>
+				<figure class="project-imageContainer">
+					<img class="project-image" src="Imagenes/platzi-video-react-native.png" alt="Proyecto del curso de React Native" width="500">
+				</figure>
+			</article>
+		</div>
+	</section>
+	
+	<div class="container">
+		<h2 class="event-list-title">Más sobre mi experiencia</h2>
+		<section id="experiencia" class="event-list">
+			<article class="event">
+				<figure class="event-imageContainer"><!--contenedor de la imagen-->
+					<img class="event-image" src="Imagenes/platzi-conf.jpg" width="500">
+				</figure>
+				<div class="event-details">
+					<h3 class="event-title">PlatziConf México 2018</h3>
+					<p class="event-description">aqui colocamos todo el texto que nos indica la explicacion o el resumen de los aspectos mas importantes
+					que contiene este articulo o seccion ...bla bla bla..lo ideal es explicar de que se trata el proyecto que tenemos en esta parte de seccion...
+					en este caso se habla de las experiencia de ese evento que se coloca como referencia</p>
+					<a class="event-url" href="https://www.youtube.com/watch?v=D0tMsf72LLw" target="_blank">Ver Plática</a>
+					<!-- el atributo "target" con el valor "blank" nos ayuda abrir una pagina adicional de la principal-->
+				</div>
+			</article>
+			<article class="event">
+				<figure class="event-imageContainer"><!--contenedor de la imagen-->
+					<img class="event-image" src="Imagenes/platzi-conf.jpg" width="500">
+				</figure>
+				<div class="event-details">
+					<h3 class="event-title">PlatziConf México 2018</h3>
+					<p class="event-description">aqui colocamos todo el texto que nos indica la explicacion o el resumen de los aspectos mas importantes
+					que contiene este articulo o seccion ...bla bla bla..lo ideal es explicar de que se trata el proyecto que tenemos en esta parte de seccion...
+					en este caso se habla de las experiencia de ese evento que se coloca como referencia</p>
+					<a class="event-url" href="https://www.youtube.com/watch?v=D0tMsf72LLw" target="_blank">Ver Plática</a>
+					<!-- el atributo "target" con el valor "blank" nos ayuda abrir una pagina adicional de la principal-->
+				</div>
+			</article>
+			<article class="event">
+				<figure class="event-imageContainer"><!--contenedor de la imagen-->
+					<img class="event-image" src="Imagenes/platzi-conf.jpg" width="500">
+				</figure>
+				<div class="event-details">
+					<h3 class="event-title">PlatziConf México 2018</h3>
+					<p class="event-description">aqui colocamos todo el texto que nos indica la explicacion o el resumen de los aspectos mas importantes
+					que contiene este articulo o seccion ...bla bla bla..lo ideal es explicar de que se trata el proyecto que tenemos en esta parte de seccion...
+					en este caso se habla de las experiencia de ese evento que se coloca como referencia</p>
+					<a class="event-url" href="https://www.youtube.com/watch?v=D0tMsf72LLw" target="_blank">Ver Plática</a>
+					<!-- el atributo "target" con el valor "blank" nos ayuda abrir una pagina adicional de la principal-->
+				</div>
+			</article>
+			<article class="event">
+				<figure class="event-imageContainer"><!--contenedor de la imagen-->
+					<img class="event-image" src="Imagenes/platzi-conf.jpg" width="500">
+				</figure>
+				<div class="event-details">
+					<h3 class="event-title">PlatziConf México 2018</h3>
+					<p class="event-description">aqui colocamos todo el texto que nos indica la explicacion o el resumen de los aspectos mas importantes
+					que contiene este articulo o seccion ...bla bla bla..lo ideal es explicar de que se trata el proyecto que tenemos en esta parte de seccion...
+					en este caso se habla de las experiencia de ese evento que se coloca como referencia</p>
+					<a class="event-url" href="https://www.youtube.com/watch?v=D0tMsf72LLw" target="_blank">Ver Plática</a>
+					<!-- el atributo "target" con el valor "blank" nos ayuda abrir una pagina adicional de la principal-->
+				</div>
+			</article>
+		</div>
+	</section>
+	
+	<section id="contacto" class="contac">
+		<div class="container">
+			<form action="/suscripcion/" class="form-email"> <!--el atributa "action" indica a donde ira la informacion-->
+				<h3>¿Creamos algo juntos?</h3>
+				<!--<label for="email">Déja tu email aqui</label>-->
+				<input type="text" placeholder="Déjame tu email" value="@gmail.com" id="email"><!--en este caso "value" sustituye a "placeholder" y es un texto editable-->
+				<!--<input type="submit" value="texto del botón">-->
+				<button>Enviar</button>
+			</form>
+			<div class="social">
+				<a href="https://twitter.com" class="social-link twitter"></a>
+				<a href="https://facebook.com" class="social-link facebook"></a>
+				<a href="https://instagram.com" class="social-link instagram"></a>
+				<a href="https://github.com" class="social-link github"></a>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<div class="container">
+			<div>
+				<p>Curso de Desarrollo Web Online 2018 <img src="Imagenes/platzi.png" width="80px" alt="Logo de platzi"></p>
+			</div>
+			<div>
+				<p>Designed with by <a href="https://twitter.com/thespianartist">@thespianartist</a></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

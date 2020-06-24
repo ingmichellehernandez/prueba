@@ -1,0 +1,375 @@
+/*
+REGLAS 
+selectores: es como se identifican los elementos de html
+declaraciones: todo lo que se hace con el selector
+propiedades: son esas cosas paticulares que se pueden hacer con todos esos elementos.
+valores: son las variables o las cosas que seamos que reciban las propiedades.
+*/
+
+/*Regla:
+
+header ---- (selector)
+----------------------------------------------------|
+{                                                   |
+	background-color (propiedad): #BDBDBD; (valor)  | (declaracion)
+}                                                   |
+----------------------------------------------------|
+*/
+
+/*Selector de etiqueta: es cada una de las etiquetas individualmente, header - section - article - nav*/
+/*Selector descendente: es la ruta completa de la etiqueta dentro de otras etiquetas, body header div nav ol li a , todo para llegar a "a"*/
+/*Selector de clase: es el identificador con clas en html y se le coloca el punto, .link*/
+/*Selector de id: un identificador mas directo colocando el numeral, #portafolio*/
+
+body{
+	font-family: DM Serif Display, serif;
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+h1{
+	font-family: Anton, sans-serif;
+	font-size: 40px; /*tamaño del texto*/
+	line-height: 50px;/*alto de linea, la separacion entre lineas*/
+	font-weight: 200; /*peso de la fuente, bold es igual a 600, normal igual a 400*/
+	/*font-style: italic; para colocar el texto en cursiva*/
+	letter-spacing: -0.1px; /*espaciado entre los caracteres, espacio entre las letras*/
+	/*text-transform: capitalize; esto es en mayusculas las primeas letras, "uppercase" coloca todo en mayusculas y "lowercase" todo en minuscula*/
+	/*text-decoration: underline; para el subrayado y otras para tachado*/
+	color: #FFFFFF;
+	margin: 0px;
+}
+
+h1 strong{
+	color: #F5A9BC;
+	letter-spacing: 1.5px;/*espaciado entre los caracteres, espacio entre las letras*/
+}
+
+h2, h3, h6{
+	font-family: Staatliches, sans-serif;
+}
+
+.header{
+	background-color: #0A122A;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	height:90px;
+}
+
+.logo{
+	margin: 0px;
+}
+
+.menu{
+	height: inherit; /*hereda*/
+}
+
+.header ol{
+	display: flex;
+	height: inherit;
+	
+}
+
+.header ol li{
+	height: inherit;
+}
+
+.header a{
+	height: inherit;
+	color: #ffffff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	padding: 0px 10px; /*el cero es el valor supeior e inferior, 10 de derecha e izquierda*/
+}
+
+
+
+ol, ul{
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+}
+/*tambien se puede colocar de esta manera:
+margin: top right bottom left ---->  margin: 10px 15px 20px 10px;;
+*/
+
+.link{
+	color: #FFFFFF;
+}
+
+/*Asignar dimensiones para el texto y las imagenes*/
+
+.hero{
+	height: 300px; /*altura*/
+	/*background-image: url("../Imagenes/hero.jpg"); /*se coloca dos puntos ".." para salir de la caspeta de css*/
+	/*background-size: 500px 300px; /*ancho por alto*/
+	/*background-repeat: no-repeat; /*para que la imagen no se repita, solo sea una*/
+	/*background-position: right; /*posicionar la imagen a la derecha*/
+	background-color: #0A122A;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.hero-image{
+	object-fit: cover; /*ajusta las dimensiones de la imagen para que se vea mejor*/
+}
+
+.portfolio{
+	background-color: #F2F2F2;
+	padding: 20px;
+}
+
+.project-details{
+	width: 500px;
+}
+
+.project-details strong{
+	font-family: Anton, sans-serif;
+	letter-spacing: 0.2px;
+	font-weight: 120;
+}
+
+.project-title{
+	font-size: 25px;
+	margin: 0px;
+}
+
+.project-course{
+	margin: 10px 0px;
+}
+.project-date{
+	margin: 10px 0px 5px 0px;
+}
+.project-url{
+	margin: 0px 0px 10px 0px;
+}
+
+.project-description{
+	font-size: 20px;
+}
+
+.project{
+	border: 1px solid #BDBDBD;
+	border-radius: 10px; /*redondear las esquinas*/
+	margin-bottom: 15px;
+	/*margin: 10px; aqui se define que todos los lados tienen el mismo tamaño*/
+	padding: 20px; /*margen interno o relleno*/
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+h2{
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #F5A9BC;
+	margin-bottom: 36px;
+}
+
+.event-list{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.event-list-title{
+	margin-left: 20px;
+}
+
+.event{
+	margin: 10px;
+	width: 480px;
+	border: 1px solid #BDBDBD;
+	border-radius: 10px;
+	flex-shrink: 0; /*para mantener el tamaño*/
+	overflow: hidden; /*oculta las esquinas para que se vea el borde*/
+	background-color: #EFF8FB
+}
+
+.event-imageContainer{
+	margin: 0px;
+}
+
+.event-image{
+	width: 480px;
+	height: 200px;
+	object-fit: cover; /*ajusta la imagen en el espacio recortando los laterales*/
+}
+
+.event-details{
+	margin: 20px 40px;
+	background-color: #FFFFFF;
+	margin-top: -40px; /*para subir el elemento*/
+	position: relative; /*sobre posicion, colocar el elemento por encima del otro*/
+	padding: 20px;
+	text-align: center;
+}
+
+.event-description{
+	text-align: left;
+}
+
+.event-url{
+	border: 1px solid #0080FF;
+	border-radius: 5px;
+	padding: 5px 20px;
+	text-decoration: none;
+}
+
+.contac{
+	background-color: #0080FF;
+	color: #FFFFFF;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.social{
+	
+}
+
+.social-link{
+	/*border: 1px solid #FFFFFF; era una referencia*/
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-size: 50px 50px; /*tamaño de cada imagen*/
+	margin: 0px 10px;
+}
+
+/*cuando se tiene dos clases se coloca de esta manera*/
+.social-link.twitter{
+	background-image: url("../Imagenes/twitter.svg"); /*svg es un formato que no cambia su resolucion*/
+}
+.social-link.facebook{
+	background-image: url("../Imagenes/facebook.svg");
+}
+.social-link.instagram{
+	background-image: url("../Imagenes/instagram.svg");
+}
+.social-link.github{
+	background-image: url("../Imagenes/github.svg");
+}
+
+.form-email input{
+	border-color: #D8D8D8;
+	border-style: solid;
+	padding:8px 20px 8px 25px;
+	background-image: url("../Imagenes/envelope.svg");
+	background-size: 20px 20px;
+	background-repeat: no-repeat; /*para que no se repita la imagen*/
+	background-position-y: 6px;
+	background-position-x: 5px;
+	border-radius: 5px;
+}
+
+.form-email button{
+	display: block;
+	background: transparent;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	padding: 5px 0px;
+	width: 100px;
+	margin-top: 10px;
+	/*margin: 10px auto 0; que tenga un margen de 10 y este centrado en ese espacio*/
+}
+
+.form-email h3{
+	
+}
+
+.footer{
+	background-color: #0A122A;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer img{
+	vertical-align: middle; /*estamos centrando verticalmente la imagen del logo*/
+}
+
+.footer a{
+	color: #FFFFFF;
+}
+
+/*estilos y detalles de los contenedores*/
+
+.container{
+	/*border: 1px solid #0A122A; fue de referencia*/
+	width: 1006px;
+	margin: 0 auto; /*centra el elemento*/
+	display: inherit; /*hereda de su padre*/
+	justify-content: inherit;
+	align-items: inherit;
+	height: inherit;
+	flex-wrap: inherit;
+}
+
+
+
+/*.flexbox{
+	display: flex; /*hace que las cajas se coloquen una al lado de la otra pero cambia su tamaño para que quepan en la pantalla*/
+	/*flex-direction: column; /*coloca las cajas una abajo de la otra*/
+	/* por defecto esta asignado {flex-direction: row;} que seria colocar las cosas en fila, una al lado de la otra*/
+	/*flex-wrap: wrap; cuando las cajas no quepan en la pantalla, bajen a la siguiente linea*/
+	/*flex-wrap: nowrap; no deja que los elementos caigan*/
+	/*justify-content: space-evenly; le da espacio entre los elementos incluyendo espacio al inicio y al final*/
+	/*margin: 100px;*/
+	/*align-items: center;*/
+	/*flex-direction: column;*/
+	/*justify-content: center;*/
+}
+
+
+/*justify-content: flex-star; todos los elementos a la izquierda por defecto*/
+/*justify-content: flex-end; todos los elementos a la derecha*/
+/*justify-content: flex-center; todos los elementos centrados*/
+/*justify-content: space-between; le da espacio entre los elementos menos al inicio no fin*/
+/*justify-content: space-evenly; le da espacio entre los elementos incluyendo espacio al inicio y al final*/
+/*justify-content: space-around; le da espacio entre los elementos pero al inicio y al final el espacio es mas angosto*/
+
+/*align-items: flex-star; los elementos se colocaran en la parte superior*/
+/*align-items: flex-end; los elementos se colocaran en la parte inferior*/
+
+
+/*.box{
+	width: 50px;
+	height: 50px;
+	border: 1px solid;
+	/*margin: 5px;
+	border-color: #000000;
+	flex-shrink: 0 /*esto indica que sera cero encogible y mantendra su tamaño*/
+}
+
+
+/*Otras formas de aplicar el borde:
+
+border-top: 10px solid red; borde superior
+border-left: 10px solid red; borde izquierdo
+border-right: 10px solid red; borde derecho
+border-bottom: 10px solid red; borde inferior
+
+border-top-color: red;
+border-top-style: solid;
+border-top-width: 10px;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
